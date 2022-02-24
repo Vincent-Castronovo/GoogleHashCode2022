@@ -3,9 +3,8 @@ def outputer(projects, outputfile="out.txt"):
         file.write(str(len(projects)))
         file.write("\n")
         for project in projects :
-            file.write(project.pop(0))
+            file.write(project)
             file.write("\n")
-            for contrib in project:
-                file.write(contrib)
-                file.write("\n")
+            file.write(' '.join(projects[project]))
+            file.write("\n")
 
