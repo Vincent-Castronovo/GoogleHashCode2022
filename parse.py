@@ -33,7 +33,7 @@ def readFile(filename):
         for j in range(nbroles):
             tmp = lines[i+j+1].split()
             skills.append([tmp[0], int(tmp[1])])
-        projets.append([nom, days, score, bbday, nbroles, skills, 0])
+        projets.append([nom, days, score, bbday, nbroles, skills, 0, []])
         i += nbroles + 1
         k += 1
 
