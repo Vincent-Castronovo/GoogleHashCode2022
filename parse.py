@@ -16,7 +16,7 @@ def readFile(filename):
         for j in range(nbskills):
             tmp = lines[i+j+1].split()
             skills.append([tmp[0], int(tmp[1])])
-        contributeurs.append([nom,skills,0])
+        contributeurs.append([nom,skills,0,None])
         i += nbskills + 1
         k += 1
 
@@ -39,4 +39,4 @@ def readFile(filename):
 
     return nbContributeurs, nbProjets, contributeurs, projets
 
-print(readFile("input_data/b_better_start_small.in.txt"))
+print(readFile("input_data/a_an_example.in.txt"))
