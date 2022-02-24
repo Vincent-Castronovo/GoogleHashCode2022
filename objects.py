@@ -1,4 +1,4 @@
-
+import enum
 
 
 class Contributor:
@@ -30,3 +30,9 @@ class Project:
         self.best_duration = best_duration
         self.number_of_roles = number_of_roles
         self.roles = roles
+
+class Skills(enum.Enum):
+    python = 0
+    cpp = 1
+    html = 2
+    css = 3
